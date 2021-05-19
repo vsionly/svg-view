@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-module.exports = function (path = '/src/assets/icons/svg', extension = false) {
-    const filepath = __dirname + path;
+module.exports = function (path, extension = false) {
+    const filepath = __dirname + '/../..' + path;
     const data = fs.readdirSync(`${filepath}`);
     console.log(data)
     var imgs = '';
@@ -9,8 +9,8 @@ module.exports = function (path = '/src/assets/icons/svg', extension = false) {
     for (var i = 0; i < data.length; i++) {
         imgs += `
         <div class="svg-panel">
-            <div class="svg-item"><img style="height:30px" src="${syspath + '/' + data[i]}"> <span>${data[i]}</span></div>
-            <div class="svg-item" style="background:#000;color:#fff"><img style="height:30px" src="${syspath + '/' + data[i]}"> <span>${data[i]}</span></div>
+            <div class="svg-item"><img style="height:30px" src="${syspath + data[i]}"> <span>${data[i]}</span></div>
+            <div class="svg-item" style="background:#000;color:#fff"><img style="height:30px" src="${syspath + data[i]}"> <span>${data[i]}</span></div>
         </div>`  ;
     }
     var html = `<!DOCTYPE html>
@@ -78,7 +78,7 @@ module.exports = function (path = '/src/assets/icons/svg', extension = false) {
             console.log(svgClass)
             const input = document.createElement('input');
             document.body.appendChild(input);
-            input.setAttribute('value', svgClass + (extension?'.svg':''));
+            input.setAttribute('value', svgClass + (${extension}?'.svg':''));
             input.select();
             let text = ''
             let color = ''
