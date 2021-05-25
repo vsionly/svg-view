@@ -1,6 +1,6 @@
 {
   "name": "svg-view",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "View all SVG images in your project",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,9 @@
 const fs = require('fs');
 
 module.exports = function (path, extension = false) {
+    if (path[0] !== '/') path = '/' + path
+    if (path.slice(-1) !== '/') path += '/'
+
     const filepath = __dirname + '/../..' + path;
     const data = fs.readdirSync(`${filepath}`);
     console.log(data)
