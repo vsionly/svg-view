@@ -4,7 +4,7 @@ View all SVG images in your project
 ### 使用文档
 
 #### 功能介绍
-    1、查询项目下svg文件中的所有svg图样式，可以快速复制使用相关svg
+    1、浏览项目下svg文件中的所有svg图样式，可以快速复制使用相关svg
 
 #### 用法
     1、项目中安装 svg-view 包 执行  npm i svg-view -D
@@ -16,7 +16,8 @@ View all SVG images in your project
     // 复制名字时 需要带后缀.svg 需要传入第二个参数
     creation('/src/img/', true)
 ```
-    命令行执行 node svg.js 会生成svgs.html 并自动在浏览器中打开，以后查看可以直接打开svgs.html
+    命令行执行 node svg.js 会生成svgs.html 并自动在浏览器中打
+    开，以后查看可以直接打开svgs.html
     如果项目有新的svg图标加入 需重新执行  node svg.js
     3、预览svg图片时  点击图片的元素  可以实现 名字的快速复制
 
@@ -28,23 +29,35 @@ View all SVG images in your project
 ### Introduce
 
 #### Features
-    1、Query all svg picture styles in the svg file under the project, you can quickly copy and use related svg
+    1、View all svg picture styles in the svg file under
+    the project, you can quickly copy and use related svg
 
 #### usage
-    1、Install the svg-view package in the project , execute npm i svg-view -D
-    2、Create a new svg.js file in the root directory of the project with any name
+    1、Install the svg-view package in the project , execute
+    npm i svg-view -D
+    2、Create a new svg.js file in the root directory of the
+    project with any name
 ```javascript
     const creation = require('svg-view')
-    // Pass in the path of the svg graph relative to the root directory (more precisely, relative to the directory where node_modules is located)
+    // Pass in the path of the svg graph relative to the root
+    // directory (more precisely, relative to the directory
+    // where node_modules is located)
     creation('/src/img/')
-    // When copying the name, it needs to have a suffix. svg needs to pass in the second parameter
+    // When copying the name, it needs to have a suffix.
+    // svg needs to pass in the second parameter
     creation('/src/img/', true)
 ```
-    Execute node svg.js from the command line to generate svgs.html and automatically open it in the browser. You can open svgs.html directly for later viewing
-    If the project has a new svg icon added, you need to re-execute node svg.js
-    3、When previewing the svg picture, click on the element of the picture to realize the quick copy of the name
+    Execute node svg.js from the command line to generate svgs.
+    html and automatically open it in the browser. You can open
+    svgs.html directly for later viewing
+    If the project has a new svg icon added, you need to re-execute
+    node svg.js
+    3、When previewing the svg picture, click on the element of the
+    picture to realize the quick copy of the name
 
 #### options
 
-    1、path 'The path relative to the root directory of the directory where the svg image is located'
-    2、extension Is the .svg suffix required when copying the name? By default, it is not required
+    1、path The path relative to the root directory of the directory
+    where the svg image is located
+    2、extension Is the .svg suffix required when copying the name?
+    By default, it is not required
