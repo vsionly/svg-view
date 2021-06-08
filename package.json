@@ -1,6 +1,6 @@
 {
   "name": "svg-view",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "View all SVG images in your project",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,15 @@
   "keywords": [
     "svg view",
     "svg preview",
-    "svg manage"
+    "svg manage",
+    "vue",
+    "vue svg",
+    "vue svgIcon",
+    "vue svg component",
+    "react",
+    "react svg",
+    "react svgIcon",
+    "react svg component"
   ],
   "author": "lywsion",
   "license": "ISC",

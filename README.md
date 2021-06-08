@@ -5,7 +5,12 @@ View all SVG images in your project
 
 #### 功能介绍
     1、浏览项目下svg文件中的所有svg图样式，可以快速复制使用相关svg
-
+    2、svg图标是无法直接查看的 所以有时虽然已经有我们需要的svg图了 我们却找不到 会重复添加
+    3、可以配合vue、 react 下的svgIcon组件使用 提升开发效率
+```javascript
+    import SvgIcon from '@/components/SvgIcon.vue'
+    Vue.component('SvgIcon', SvgIcon)
+```
 #### 用法
     1、项目中安装 svg-view 包 执行  npm i svg-view -D
     2、项目根目录新建svg.js 文件 名字随意
@@ -31,12 +36,22 @@ View all SVG images in your project
 #### Features
     1、View all svg picture styles in the svg file under
     the project, you can quickly copy and use related svg
+    2. The svg icon cannot be viewed directly, so sometimes
+    although we already have the svg image we need, we
+    can’t find it and will add it repeatedly
+    3. It can be used with the svgIcon component under
+    vue and react to improve development efficiency
 
+```javascript
+    import SvgIcon from '@/components/SvgIcon.vue'
+    Vue.component('SvgIcon', SvgIcon)
+```
 #### usage
     1、Install the svg-view package in the project , execute
     npm i svg-view -D
     2、Create a new svg.js file in the root directory of the
     project with any name
+
 ```javascript
     const creation = require('svg-view')
     // Pass in the path of the svg graph relative to the root
