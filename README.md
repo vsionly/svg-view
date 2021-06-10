@@ -5,7 +5,8 @@ View all SVG images in your project
 
 #### 功能介绍
     1、浏览项目下svg文件中的所有svg图样式，可以快速复制使用相关svg
-    2、svg图标是无法直接查看的 所以有时虽然已经有我们需要的svg图了 我们却找不到 会重复添加
+    2、svg图标是无法直接查看的 所以有时虽然已经有我们需要的svg图了
+    我们却找不到 会重复添加
     3、可以配合vue、 react 下的svgIcon组件使用 提升开发效率
 ```javascript
     import SvgIcon from '@/components/SvgIcon.vue'
@@ -27,9 +28,9 @@ View all SVG images in your project
     3、预览svg图片时  点击图片的元素  可以实现 名字的快速复制
 
 #### 配置项
-
-    第一个参数path 'svg图所在目录相对根目录的路径'
-    第二个参数extension 复制名字时是否需要.svg后缀 ，默认不需要
+    1、第一个参数path 'svg图所在目录相对根目录的路径'
+    2、第二个参数extension 复制名字时是否需要.svg后缀 ，默认不需要
+      例如：edit.svg 点击复制的是 edit , 如果配置第二个参数复制的是 edit.svg
 
 ### Introduce
 
@@ -62,8 +63,8 @@ View all SVG images in your project
     // svg needs to pass in the second parameter
     creation('/src/img/', true)
 ```
-    Execute node svg.js from the command line to generate svgs.
-    html and automatically open it in the browser. You can open
+    Execute node svg.js from the command line to generate svgs.html
+    and automatically open it in the browser. You can open
     svgs.html directly for later viewing
     If the project has a new svg icon added, you need to re-execute
     node svg.js
@@ -76,3 +77,5 @@ View all SVG images in your project
     where the svg image is located
     2、extension Is the .svg suffix required when copying the name?
     By default, it is not required
+    For example: edit.svg click to copy edit, if you configure the
+    second parameter to copy edit.svg
